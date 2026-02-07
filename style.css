@@ -45,7 +45,11 @@ button {
   background: #fff;
   color: #ff4d6d;
   position: absolute;
-  transition: left 0.35s ease, top 0.35s ease, transform 0.2s ease;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+#noBtn:active {
+  transform: scale(0.95);
 }
 
 .hidden {
