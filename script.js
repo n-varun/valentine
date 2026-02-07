@@ -3,13 +3,19 @@ const yesBtn = document.getElementById("yesBtn");
 const questionBox = document.getElementById("questionBox");
 const surprise = document.getElementById("surprise");
 
-noBtn.addEventListener("mouseover", () => {
-  const x = Math.random() * (window.innerWidth - 150);
-  const y = Math.random() * (window.innerHeight - 100);
+function moveNoButton() {
+  const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
+  const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
 
   noBtn.style.left = `${x}px`;
   noBtn.style.top = `${y}px`;
-});
+}
+
+// For phones (touch)
+noBtn.addEventListener("touchstart", moveNoButton);
+
+// For laptops (mouse)
+noBtn.addEventListener("mouseover", moveNoButton);
 
 yesBtn.addEventListener("click", () => {
   questionBox.classList.add("hidden");
