@@ -32,15 +32,16 @@ button {
   transition: transform 0.25s ease, background 0.25s ease;
 }
 
-#yesBtn {
-  background: #ff4d6d;
-  color: white;
-}
-
 #yesBtn:hover {
   transform: scale(1.1);
 }
-
+#yesBtn {
+  background: #ff4d6d;
+  color: white;
+  font-size: 2.2rem;
+  padding: 28px 56px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
 #noBtn {
   background: #fff;
   color: #ff4d6d;
