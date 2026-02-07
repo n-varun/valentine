@@ -23,13 +23,13 @@ h1 {
 }
 
 button {
-  padding: 20px 40px;
-  font-size: 1.6rem;
+  padding: 26px 52px;
+  font-size: 2rem;
   border: none;
-  border-radius: 30px;
+  border-radius: 40px;
   cursor: pointer;
-  margin: 10px;
-  transition: all 0.2s ease;
+  margin: 16px;
+  transition: transform 0.25s ease, background 0.25s ease;
 }
 
 #yesBtn {
@@ -45,6 +45,7 @@ button {
   background: #fff;
   color: #ff4d6d;
   position: absolute;
+  transition: left 0.35s ease, top 0.35s ease, transform 0.2s ease;
 }
 
 .hidden {
